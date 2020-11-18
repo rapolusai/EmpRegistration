@@ -26,7 +26,6 @@ public class EmployeeController {
 
 	@PostMapping("/save")
 	public String saveEmployee(@ModelAttribute Employee employee, Model model) {
-		Employee emp;// = new Employee();
 		if (employee != null) {
 			service.saveEmployee(employee);
 			String message = "Employee '" + employee.getName() + "' saved and total employees are "+service.getAllEmployees().size();
@@ -48,7 +47,6 @@ public class EmployeeController {
 	@GetMapping("/delete")
 	public String deleteById(@RequestParam Integer id, Model model) {
 		service.deleteById(id);
-
 		List<Employee> employees = service.getAllEmployees();
 		model.addAttribute("employees", employees);
 		return "redirect:all";
