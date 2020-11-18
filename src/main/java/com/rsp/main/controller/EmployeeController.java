@@ -28,10 +28,6 @@ public class EmployeeController {
 	public String saveEmployee(@ModelAttribute Employee employee, Model model) {
 		Employee emp;// = new Employee();
 		if (employee != null) {
-//			emp.setName(employee.getName());
-//			emp.setEmail(employee.getEmail());
-//			emp.setDept(employee.getDept());
-//			emp.setSalary(employee.getSalary());
 			service.saveEmployee(employee);
 			String message = "Employee '" + employee.getName() + "' saved and total employees are "+service.getAllEmployees().size();
 			model.addAttribute("msg", message);
@@ -60,7 +56,6 @@ public class EmployeeController {
 
 	@GetMapping("/edit")
 	public String editEmployee(@RequestParam("id") Integer id, @ModelAttribute Employee employee, Model model) {
-		// employee = new Employee();
 		Employee emp = service.findById(id);
 		employee.setId(emp.getId());
 		employee.setName(emp.getName());
