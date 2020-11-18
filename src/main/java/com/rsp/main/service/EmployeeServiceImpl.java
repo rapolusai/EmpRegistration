@@ -17,10 +17,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 	@Override
 	public Integer saveEmployee(Employee e) {
-//		e.setName(employee.getName());
-//		e.setEmail(employee.getEmail());
-//		e.setDept(employee.getDept());
-//		e.setSalary(employee.getSalary());
 		e.setHra(calculateHra(e.getSalary()));
 		e.setDa(calulateDa(e.getSalary()));
 		Employee emp = repo.save(e);
@@ -58,10 +54,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	public void updateEmployeeById(Employee e) {
 		Employee emp = new Employee();
 		if (repo.existsById(e.getId())) {
-			emp.setId(e.getId());
-			emp.setName(e.getName());
-			emp.setSalary(e.getSalary());
-			emp.setDept(e.getDept());
 			emp.setHra(calculateHra(e.getSalary()));
 			emp.setDa(calulateDa(e.getSalary()));
 			repo.save(emp);

@@ -26,13 +26,14 @@ public class EmployeeController {
 
 	@PostMapping("/save")
 	public String saveEmployee(@ModelAttribute Employee employee, Model model) {
-		Employee emp = new Employee();
+		Employee emp;// = new Employee();
 		if (employee != null) {
-			emp.setName(employee.getName());
-			emp.setEmail(employee.getEmail());
-			emp.setDept(employee.getDept());
-			emp.setSalary(employee.getSalary());
-			String message = "Employee '" + service.saveEmployee(emp) + "' savd";
+//			emp.setName(employee.getName());
+//			emp.setEmail(employee.getEmail());
+//			emp.setDept(employee.getDept());
+//			emp.setSalary(employee.getSalary());
+			service.saveEmployee(employee);
+			String message = "Employee '" + employee.getName() + "' saved and total employees are "+service.getAllEmployees().size();
 			model.addAttribute("msg", message);
 			return "Registration";
 		} else {
