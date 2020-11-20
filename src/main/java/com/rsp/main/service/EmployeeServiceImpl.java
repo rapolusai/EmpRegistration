@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.rsp.main.exception.ResourceNotFoundException;
@@ -35,6 +37,12 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	@Override
 	public List<Employee> getAllEmployees() {
 		return repo.findAll();
+	}
+	
+	
+	public Page<Employee> getAllEmployee(Pageable pageable) {
+		Page<Employee> page =  repo.findAll(pageable);
+		return page;
 	}
 
 	@Override

@@ -68,3 +68,578 @@
 2020-11-20 15:16:35.268  WARN 21932 --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 2020-11-20 15:16:35.269  INFO 21932 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-11-20 15:16:35.271  INFO 21932 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-20 16:01:42.507  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Starting EmpRegistrationApplication using Java 15 on DESKTOP-BD7FNVN with PID 3876 (D:\Rapolus\Workspace\EmpRegistration\target\classes started by saipr in D:\Rapolus\Workspace\EmpRegistration)
+2020-11-20 16:01:42.508  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : No active profile set, falling back to default profiles: default
+2020-11-20 16:01:42.532  INFO 3876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 16:01:42.532  INFO 3876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 16:01:42.862  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-20 16:01:42.893  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2020-11-20 16:01:43.201  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-11-20 16:01:43.207  INFO 3876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 16:01:43.207  INFO 3876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 16:01:43.365  INFO 3876 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-11-20 16:01:43.371  INFO 3876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 16:01:43.371  INFO 3876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 838 ms
+2020-11-20 16:01:43.398  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 16:01:43.498  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 16:01:43.503  INFO 3876 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-11-20 16:01:43.580  INFO 3876 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:01:43.608  INFO 3876 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 16:01:43.627  WARN 3876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 16:01:43.639  INFO 3876 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-20 16:01:43.721  INFO 3876 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-20 16:01:43.795  INFO 3876 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-20 16:01:43.806  WARN 3876 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-20 16:01:43.838  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-11-20 16:01:43.839  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-20 16:01:44.124  INFO 3876 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 16:01:44.128  INFO 3876 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:01:44.231  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-20 16:01:44.236  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Started EmpRegistrationApplication in 1.937 seconds (JVM running for 2.42)
+2020-11-20 16:02:39.408  INFO 3876 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 16:02:39.409  INFO 3876 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 16:02:39.412  INFO 3876 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-11-20 16:02:58.250  INFO 3876 --- [http-nio-9090-exec-3] com.rsp.main.EmpRegistrationApplication  : Employee saved : sai
+2020-11-20 16:03:12.330  INFO 3876 --- [http-nio-9090-exec-4] com.rsp.main.EmpRegistrationApplication  : Employee saved : raj
+2020-11-20 16:03:26.974  INFO 3876 --- [http-nio-9090-exec-5] com.rsp.main.EmpRegistrationApplication  : Employee saved : shara
+2020-11-20 16:03:28.588 ERROR 3876 --- [http-nio-9090-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.springframework.data.domain.Page (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.springframework.data.domain.Page is in unnamed module of loader 'app')] with root cause
+
+java.lang.ClassCastException: class java.util.ArrayList cannot be cast to class org.springframework.data.domain.Page (java.util.ArrayList is in module java.base of loader 'bootstrap'; org.springframework.data.domain.Page is in unnamed module of loader 'app')
+	at com.rsp.main.service.EmployeeServiceImpl.getAllEmployee(EmployeeServiceImpl.java:44) ~[classes/:na]
+	at com.rsp.main.controller.EmployeeController.all(EmployeeController.java:56) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-11-20 16:07:25.108  INFO 3876 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:07:25.109  INFO 3876 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-11-20 16:07:25.121  INFO 3876 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:07:25.337  WARN 3876 --- [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-11-20 16:07:25.338  INFO 3876 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-20 16:07:25.343  INFO 3876 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-20 16:07:25.389  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Application started
+2020-11-20 16:07:25.413  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Starting EmpRegistrationApplication using Java 15 on DESKTOP-BD7FNVN with PID 3876 (D:\Rapolus\Workspace\EmpRegistration\target\classes started by saipr in D:\Rapolus\Workspace\EmpRegistration)
+2020-11-20 16:07:25.413  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : No active profile set, falling back to default profiles: default
+2020-11-20 16:07:25.495  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-20 16:07:25.500  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2020-11-20 16:07:25.550  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-11-20 16:07:25.551  INFO 3876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 16:07:25.551  INFO 3876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 16:07:25.601  INFO 3876 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-11-20 16:07:25.602  INFO 3876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 16:07:25.602  INFO 3876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2020-11-20 16:07:25.612  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-11-20 16:07:25.614  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-11-20 16:07:25.614  INFO 3876 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-11-20 16:07:25.632  INFO 3876 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:07:25.634  INFO 3876 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 16:07:25.637  INFO 3876 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-20 16:07:25.646  WARN 3876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 16:07:25.653  INFO 3876 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 16:07:25.654  INFO 3876 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:07:25.677  WARN 3876 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-20 16:07:25.703  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-11-20 16:07:25.704  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-20 16:07:25.726  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-20 16:07:25.729  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Started EmpRegistrationApplication in 0.336 seconds (JVM running for 343.912)
+2020-11-20 16:07:25.730  INFO 3876 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-20 16:08:21.391  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-20 16:08:21.463  INFO 3876 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:08:21.463  INFO 3876 --- [Thread-7] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-11-20 16:08:21.467  INFO 3876 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:08:21.668  WARN 3876 --- [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-11-20 16:08:21.669  INFO 3876 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-11-20 16:08:21.670  INFO 3876 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-11-20 16:08:21.729  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Application started
+2020-11-20 16:08:21.753  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Starting EmpRegistrationApplication using Java 15 on DESKTOP-BD7FNVN with PID 3876 (D:\Rapolus\Workspace\EmpRegistration\target\classes started by saipr in D:\Rapolus\Workspace\EmpRegistration)
+2020-11-20 16:08:21.753  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : No active profile set, falling back to default profiles: default
+2020-11-20 16:08:21.828  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-20 16:08:21.832  INFO 3876 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2020-11-20 16:08:21.877  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-11-20 16:08:21.878  INFO 3876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 16:08:21.878  INFO 3876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 16:08:21.921  INFO 3876 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-11-20 16:08:21.922  INFO 3876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 16:08:21.922  INFO 3876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 167 ms
+2020-11-20 16:08:21.934  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-11-20 16:08:21.935  INFO 3876 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-11-20 16:08:21.936  INFO 3876 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-11-20 16:08:21.947  INFO 3876 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:08:21.950  INFO 3876 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 16:08:21.952  INFO 3876 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-20 16:08:21.962  WARN 3876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 16:08:21.967  INFO 3876 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 16:08:21.967  INFO 3876 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:08:22.001  WARN 3876 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-20 16:08:22.017  INFO 3876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-11-20 16:08:22.017  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-20 16:08:22.039  INFO 3876 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-20 16:08:22.042  INFO 3876 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Started EmpRegistrationApplication in 0.309 seconds (JVM running for 400.225)
+2020-11-20 16:08:22.042  INFO 3876 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-20 16:08:22.989  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-20 16:08:23.053  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:08:23.054  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-11-20 16:08:23.058  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:08:23.259  WARN 3876 --- [RMI TCP Connection(11)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-11-20 16:08:23.260  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-11-20 16:08:23.262  INFO 3876 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-11-20 16:08:31.641  INFO 23292 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Starting EmpRegistrationApplication using Java 15 on DESKTOP-BD7FNVN with PID 23292 (D:\Rapolus\Workspace\EmpRegistration\target\classes started by saipr in D:\Rapolus\Workspace\EmpRegistration)
+2020-11-20 16:08:31.641  INFO 23292 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : No active profile set, falling back to default profiles: default
+2020-11-20 16:08:31.667  INFO 23292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 16:08:31.667  INFO 23292 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 16:08:31.993  INFO 23292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-20 16:08:32.047  INFO 23292 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2020-11-20 16:08:32.354  INFO 23292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-11-20 16:08:32.360  INFO 23292 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 16:08:32.360  INFO 23292 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 16:08:32.518  INFO 23292 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-11-20 16:08:32.524  INFO 23292 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 16:08:32.524  INFO 23292 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2020-11-20 16:08:32.549  INFO 23292 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 16:08:32.646  INFO 23292 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 16:08:32.650  INFO 23292 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-11-20 16:08:32.719  INFO 23292 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:08:32.750  INFO 23292 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 16:08:32.771  WARN 23292 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 16:08:32.782  INFO 23292 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-20 16:08:32.864  INFO 23292 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-20 16:08:32.947  INFO 23292 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-20 16:08:32.971  WARN 23292 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-20 16:08:33.011  INFO 23292 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-11-20 16:08:33.012  INFO 23292 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-20 16:08:33.303  INFO 23292 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 16:08:33.307  INFO 23292 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:08:33.409  INFO 23292 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-20 16:08:33.414  INFO 23292 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Started EmpRegistrationApplication in 1.979 seconds (JVM running for 2.461)
+2020-11-20 16:08:46.004  INFO 23292 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 16:08:46.004  INFO 23292 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 16:08:46.005  INFO 23292 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-20 16:08:49.001 ERROR 23292 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[localhost].[/].[jsp]        : Servlet.service() for servlet [jsp] threw exception
+
+org.apache.jasper.JasperException: /WEB-INF/Pages/AllEmployees.jsp (line: [48], column: [20]) Unterminated [&lt;c:forEach] tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:1006) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1291) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:144) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:386) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-11-20 16:08:49.004 ERROR 23292 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [/WEB-INF/Pages/AllEmployees.jsp (line: [48], column: [20]) Unterminated [&lt;c:forEach] tag] with root cause
+
+org.apache.jasper.JasperException: /WEB-INF/Pages/AllEmployees.jsp (line: [48], column: [20]) Unterminated [&lt;c:forEach] tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:1006) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1291) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1470) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:144) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:206) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:386) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-11-20 16:11:43.363  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-11-20 16:11:43.449  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:11:43.450  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-11-20 16:11:43.461  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:11:43.678  WARN 23292 --- [RMI TCP Connection(6)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2020-11-20 16:11:43.679  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-20 16:11:43.684  INFO 23292 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-20 16:11:51.558  INFO 13124 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Starting EmpRegistrationApplication using Java 15 on DESKTOP-BD7FNVN with PID 13124 (D:\Rapolus\Workspace\EmpRegistration\target\classes started by saipr in D:\Rapolus\Workspace\EmpRegistration)
+2020-11-20 16:11:51.559  INFO 13124 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : No active profile set, falling back to default profiles: default
+2020-11-20 16:11:51.583  INFO 13124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-20 16:11:51.583  INFO 13124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-20 16:11:51.908  INFO 13124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-20 16:11:51.938  INFO 13124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2020-11-20 16:11:52.258  INFO 13124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-11-20 16:11:52.264  INFO 13124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 16:11:52.265  INFO 13124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-20 16:11:52.428  INFO 13124 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-11-20 16:11:52.434  INFO 13124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 16:11:52.434  INFO 13124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+2020-11-20 16:11:52.459  INFO 13124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-20 16:11:52.561  INFO 13124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-20 16:11:52.565  INFO 13124 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-11-20 16:11:52.643  INFO 13124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 16:11:52.671  INFO 13124 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-20 16:11:52.690  WARN 13124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-20 16:11:52.701  INFO 13124 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-20 16:11:52.783  INFO 13124 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-20 16:11:52.859  INFO 13124 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-11-20 16:11:52.871  WARN 13124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-11-20 16:11:52.904  INFO 13124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-11-20 16:11:52.906  INFO 13124 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-20 16:11:53.193  INFO 13124 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-20 16:11:53.197  INFO 13124 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-20 16:11:53.302  INFO 13124 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-20 16:11:53.308  INFO 13124 --- [restartedMain] com.rsp.main.EmpRegistrationApplication  : Started EmpRegistrationApplication in 1.957 seconds (JVM running for 2.44)
+2020-11-20 16:12:01.587  INFO 13124 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 16:12:01.588  INFO 13124 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 16:12:01.589  INFO 13124 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-11-20 16:12:04.094 ERROR 13124 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[localhost].[/].[jsp]        : Servlet.service() for servlet [jsp] threw exception
+
+javax.servlet.jsp.JspTagException: 'end' < 0
+	at javax.servlet.jsp.jstl.core.LoopTagSupport.validateEnd(LoopTagSupport.java:487) ~[jstl-1.2.jar:1.2]
+	at org.apache.taglibs.standard.tag.rt.core.ForEachTag.setEnd(ForEachTag.java:62) ~[jstl-1.2.jar:1.2]
+	at org.apache.jsp.WEB_002dINF.Pages.AllEmployees_jsp._jspx_meth_c_005fforEach_005f1(AllEmployees_jsp.java:373) ~[na:na]
+	at org.apache.jsp.WEB_002dINF.Pages.AllEmployees_jsp._jspService(AllEmployees_jsp.java:172) ~[na:na]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-11-20 16:12:04.099 ERROR 13124 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [An exception occurred processing [/WEB-INF/Pages/AllEmployees.jsp] at line [48]
+
+45: 		<a href="?page=${page.getNumber()-1 }">Previous</a> &nbsp; &nbsp;
+46: 	</c:if>
+47: 
+48: 	<c:forEach var="i" begin="0" end="${page.getTotalPages()-1 }">
+49: 		<a href="?page=${i}">${i+1 }</a> &nbsp; &nbsp;	
+50: 	</c:forEach>
+51: 
+
+
+Stacktrace:] with root cause
+
+javax.servlet.jsp.JspTagException: 'end' < 0
+	at javax.servlet.jsp.jstl.core.LoopTagSupport.validateEnd(LoopTagSupport.java:487) ~[jstl-1.2.jar:1.2]
+	at org.apache.taglibs.standard.tag.rt.core.ForEachTag.setEnd(ForEachTag.java:62) ~[jstl-1.2.jar:1.2]
+	at org.apache.jsp.WEB_002dINF.Pages.AllEmployees_jsp._jspx_meth_c_005fforEach_005f1(AllEmployees_jsp.java:373) ~[na:na]
+	at org.apache.jsp.WEB_002dINF.Pages.AllEmployees_jsp._jspService(AllEmployees_jsp.java:172) ~[na:na]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:477) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-9.0.39.jar:9.0.39]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-11-20 16:12:51.489  INFO 13124 --- [http-nio-9090-exec-3] com.rsp.main.EmpRegistrationApplication  : Employee saved : sai
+2020-11-20 16:13:07.317  INFO 13124 --- [http-nio-9090-exec-6] com.rsp.main.EmpRegistrationApplication  : Employee saved : Sairapolu
+2020-11-20 16:13:16.780  INFO 13124 --- [http-nio-9090-exec-7] com.rsp.main.EmpRegistrationApplication  : Employee saved : rajini
+2020-11-20 16:13:28.697  INFO 13124 --- [http-nio-9090-exec-8] com.rsp.main.EmpRegistrationApplication  : Employee saved : sairaj
+2020-11-20 16:13:38.432  INFO 13124 --- [http-nio-9090-exec-9] com.rsp.main.EmpRegistrationApplication  : Employee saved : sairaj
+2020-11-20 16:13:47.523  INFO 13124 --- [http-nio-9090-exec-1] com.rsp.main.EmpRegistrationApplication  : Employee saved : Sairapolu
+2020-11-20 16:13:57.356  INFO 13124 --- [http-nio-9090-exec-2] com.rsp.main.EmpRegistrationApplication  : Employee saved : sairaj
+2020-11-20 16:14:06.217  INFO 13124 --- [http-nio-9090-exec-3] com.rsp.main.EmpRegistrationApplication  : Employee saved : sairaj
+2020-11-20 16:14:15.691  INFO 13124 --- [http-nio-9090-exec-4] com.rsp.main.EmpRegistrationApplication  : Employee saved : Shahera
+2020-11-20 16:14:26.555  INFO 13124 --- [http-nio-9090-exec-5] com.rsp.main.EmpRegistrationApplication  : Employee saved : sairaj
+2020-11-20 16:14:27.019  WARN 13124 --- [http-nio-9090-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'employee' on field 'salary': rejected value []; codes [typeMismatch.employee.salary,typeMismatch.salary,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.salary,salary]; arguments []; default message [salary]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'double' for property 'salary'; nested exception is java.lang.NumberFormatException: empty String]]
+2020-11-20 16:19:38.972  INFO 13124 --- [http-nio-9090-exec-2] com.rsp.main.EmpRegistrationApplication  : Employee saved : Sairapolu

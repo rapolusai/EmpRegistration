@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,10 +44,20 @@ public class EmployeeController {
 
 	}
 
+//	@GetMapping("/all")
+//	public String all(Model model) {
+//		List<Employee> employees = service.getAllEmployees();
+//		model.addAttribute("employees", employees);
+//		return "AllEmployees";
+//	}
+	
 	@GetMapping("/all")
-	public String all(Model model) {
-		List<Employee> employees = service.getAllEmployees();
+	public String all(@PageableDefault (page =0, size=3)Pageable pageable, Model model) {
+		Page<Employee> page = service.getAllEmployee(pageable);
+		List<Employee> employees = page.getContent();
+		
 		model.addAttribute("employees", employees);
+		model.addAttribute("page", page);
 		return "AllEmployees";
 	}
 
