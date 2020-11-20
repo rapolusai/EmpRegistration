@@ -2,6 +2,7 @@ package com.rsp.main.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,12 +11,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.rsp.main.EmpRegistrationApplication;
+import com.rsp.main.exception.ResourceNotFoundException;
 import com.rsp.main.model.Employee;
 import com.rsp.main.service.IEmployeeService;
 
 @Controller
 public class EmployeeController {
-
+	private  Logger log=org.slf4j.LoggerFactory.getLogger(EmpRegistrationApplication.class);
 	@Autowired
 	private IEmployeeService service;
 
@@ -30,6 +33,7 @@ public class EmployeeController {
 			service.saveEmployee(employee);
 			String message = "Employee '" + employee.getName() + "' saved and total employees are "+service.getAllEmployees().size();
 			model.addAttribute("msg", message);
+			log.info("Employee saved : "+employee.getName() );
 			return "Registration";
 		} else {
 			return null;
@@ -54,16 +58,22 @@ public class EmployeeController {
 
 	@GetMapping("/edit")
 	public String editEmployee(@RequestParam("id") Integer id, @ModelAttribute Employee employee, Model model) {
-		Employee emp = service.findById(id);
-		employee.setId(emp.getId());
-		employee.setName(emp.getName());
-		employee.setEmail(emp.getEmail());
-		employee.setSalary(emp.getSalary());
-		employee.setDept(emp.getDept());
-		employee.setHra(emp.getHra());
-		employee.setDa(emp.getDa());
-		model.addAttribute("emp", employee);
-		return "EmployeeEdit";
+		try {
+			Employee emp = service.findById(id);
+			employee.setId(emp.getId());
+			employee.setName(emp.getName());
+			employee.setEmail(emp.getEmail());
+			employee.setSalary(emp.getSalary());
+			employee.setDept(emp.getDept());
+			employee.setHra(emp.getHra());
+			employee.setDa(emp.getDa());
+			model.addAttribute("emp", employee);
+			return "EmployeeEdit";
+		}catch(ResourceNotFoundException rnfe) {
+			rnfe.printStackTrace();
+			throw rnfe;
+		}
+		
 	}
 
 	@PostMapping("/update")

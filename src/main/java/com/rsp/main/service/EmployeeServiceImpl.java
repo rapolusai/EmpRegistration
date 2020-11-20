@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.rsp.main.exception.ResourceNotFoundException;
 import com.rsp.main.model.Employee;
 import com.rsp.main.repository.EmployeeRepository;
 
@@ -44,10 +45,21 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	@Override
 	public Employee findById(Integer id) {
 		Optional<Employee> emp = repo.findById(id);
-		if (emp.isPresent()) {
-			return emp.get();
-		}
-		return null;
+//		if (emp.isPresent()) {
+//			return emp.get();
+//		}
+//		return null;
+		
+//		if(emp.isPresent()) {
+//			return emp.get();
+//		}else {
+//			throw new ResourceNotFoundException("Employee '"+id+ "'Not Found");
+//		}
+
+		Employee e = repo.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Employee '" + id + "'Not Found"));
+		return e;
+
 	}
 
 	@Override
