@@ -37,8 +37,8 @@
 				<td>${obj.dept }</td>
 				<td>${obj.hra }</td>
 				<td>${obj.da }</td>
-				<td><a href="edit?id=${obj.id}">Edit</a></td>
-				<td><a href="delete?id=${obj.id}">Delete</a></td>
+				<td><a class="btn btn-primary" href="edit?id=${obj.id}">Edit</a></td>
+				<td><a class="btn btn-primary" href="delete?id=${obj.id}">Delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>
